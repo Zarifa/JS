@@ -809,30 +809,75 @@
 
 ////////////////////////
 
-var person = 'Mike';
-var age = 28;
+// var person = 'Mike';
+// var age = 28;
 
-function myTag(strings, personExp, ageExp) {
-    var str0 = strings[0]; // "That "
-    var str1 = strings[1]; // " is a "
+// function myTag(strings, personExp, ageExp) {
+//     var str0 = strings[0]; // "That "
+//     var str1 = strings[1]; // " is a "
 
-    // Технически, в конце итогового выражения
-    // (в нашем примере) есть ещё одна строка,
-    // но она пустая (""), так что пропустим её.
-    // var str2 = strings[2];
+//     // Технически, в конце итогового выражения
+//     // (в нашем примере) есть ещё одна строка,
+//     // но она пустая (""), так что пропустим её.
+//     // var str2 = strings[2];
 
-    var ageStr;
-    if (ageExp > 99) {
-        ageStr = 'centenarian';
-    } else {
-        ageStr = 'youngster';
-    }
+//     var ageStr;
+//     if (ageExp > 99) {
+//         ageStr = 'centenarian';
+//     } else {
+//         ageStr = 'youngster';
+//     }
 
-    // Мы даже можем вернуть строку, построенную другим шаблонным литералом
-    return `${str0}${personExp}${str1}${ageStr}`;
-}
+//     // Мы даже можем вернуть строку, построенную другим шаблонным литералом
+//     return `${str0}${personExp}${str1}${ageStr}`;
+// }
 
-var output = myTag `That ${ person } is a ${ age }`;
+// var output = myTag `That ${ person } is a ${ age }`;
 
-console.log(output);
-// That Mike is a youngster
+// console.log(output);
+// // That Mike is a youngster
+
+// let i = 1;
+// let msg = '';
+
+// while (i < 10) {
+//     msg += i + " x 3 = " + (i * 3) + '<br>';
+//     i++
+// }
+// document.write(msg);
+
+// '<>'
+
+// let j = 1;
+// let msg1 = '';
+
+// while (j < 10) {
+//     msg1 += j + ' x 4 = ' + (j * 4) + '<br>';
+//     j++
+// }
+
+// document.write(msg1);
+
+
+// let k;
+// for (k = 1; k <= 10; k++) {
+//     if (k % 2 !== 0) {
+//         continue
+//     }
+//     document.write('<br> Even number: ' + k);
+// }
+
+
+// let z;
+// let n = 10;
+// for (z = 1; z <= n; z++) {
+//     if (z % 2 == 0) {
+//         continue;
+//     }
+//     document.write('<br> odd numbers are:' + z)
+// }
+const word = 'You handsome';
+console.log(word.slice(5, 8)); //and
+
+const word = 'You handsome';
+console.log(word.substr(5, 3)); //and
